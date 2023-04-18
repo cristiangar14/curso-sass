@@ -1,0 +1,12 @@
+{
+  "name": "curso-sass",
+  "version": "1.0.0",
+  "description": "\"Curso de sass\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./utils/scss/styles.scss ./utils/css/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"Cristian Garzon\"}",
+  "license": "ISC"
+}
