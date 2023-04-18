@@ -1,0 +1,23 @@
+
+
+.#{$brand}-title-primary{
+    font-size: $font-size;
+    color: $primary;
+}
+
+.#{$brand}-title-secundary{
+    font-size: $font-size;
+    color: $secundary;
+}
+
+.#{$brand}-title-dark{
+    color: $dark_opacity;
+
+    //Nesting
+    font: {
+        size: $font-size;
+        weight: 20px;
+        family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+
+}

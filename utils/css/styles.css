@@ -1,3 +1,10 @@
+/*
+* Abstracts
+*/
+/*
+* Compoenents 
+*/
+@import url(../obstracts/_variables.scss);
 .cdc-title-primary {
   font-size: 1.75rem;
   color: #dc9c10;
