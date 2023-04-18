@@ -1,5 +1,16 @@
-.title {
-  color: rgb(29, 150, 29);
+.cdc-title-primary {
+  font-size: 1.75rem;
+  color: #3935ba;
+}
+
+.cdc-title-secundary {
+  font-size: 1.75rem;
+  color: #40ba35;
+}
+
+.cdc-title-dark {
+  font-size: 1.75rem;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,23 @@
-.title{
-    color: rgb(29, 150, 29);
+$primary: #3935ba;
+$secundary: #40ba35;
+$dark: #000;
+$dark_opacity: rgba($dark, 0.4);
+
+$font-size: 1.75rem;
+$brand: 'cdc';
+
+
+.#{$brand}-title-primary{
+    font-size: $font-size;
+    color: $primary;
+}
+
+.#{$brand}-title-secundary{
+    font-size: $font-size;
+    color: $secundary;
+}
+
+.#{$brand}-title-dark{
+    font-size: $font-size;
+    color: $dark_opacity;
 }
