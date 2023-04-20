@@ -30,6 +30,28 @@
     }
 }
 
+
+// @mixin button ($name, $color){
+//     .#{$brand}-btn-outline-#{$name}{
+//         border: 1px solid $color;
+//         color: $color;
+//         &:hover {
+//             background: $color;
+//             color: #fff;
+//         }
+//     }
+// }
+@mixin button ($name, $color){
+    &-#{$name} {
+        border: 1px solid $color;
+        color: $color;
+        &:hover {
+            background: $color;
+            color: #fff;
+        }
+    }
+}
+
 // Outline buttons
 .#{$brand}-btn-outline {
     background: none;
@@ -42,28 +64,36 @@
     cursor: pointer;
     transition: 0.5s all ease-in-out;
 
-    &-primary{
-        border: 1px solid $primary;
-        color: $primary;
-        &:hover{
-            background: $primary;
-            color: #fff;
-        }
-    }
-    &-success{
-        border: 1px solid $secundary;
-        color: $secundary;
-        &:hover{
-            background: $secundary;
-            color: #fff;
-        }
-    }
-    &-danger{
-        border: 1px solid rgb(231,47,56);
-        color: rgb(231,47,56);
-        &:hover{
-            background: rgb(231,47,56);
-            color: #fff;
-        }
-    }
+    // &-primary{
+    //     border: 1px solid $primary;
+    //     color: $primary;
+    //     &:hover{
+    //         background: $primary;
+    //         color: #fff;
+    //     }
+    // }
+    // &-success{
+    //     border: 1px solid $secundary;
+    //     color: $secundary;
+    //     &:hover{
+    //         background: $secundary;
+    //         color: #fff;
+    //     }
+    // }
+    // &-danger{
+    //     border: 1px solid rgb(231,47,56);
+    //     color: rgb(231,47,56);
+    //     &:hover{
+    //         background: rgb(231,47,56);
+    //         color: #fff;
+    //     }
+    // }
+    @include button('primary', $primary);
+    @include button('success', $secundary);
+    @include button('danger',  rgb(231,47,56));
 }
+
+// @include button('primary', $primary);
+// @include button('success', $secundary);
+// @include button('danger',  rgb(231,47,56));
+
