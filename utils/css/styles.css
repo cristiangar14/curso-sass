@@ -146,6 +146,14 @@
   background: rgba(255, 85, 0, 0.5);
   color: #fff;
 }
+.cdc-btn-outline-light {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.cdc-btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
 
 .im-container {
   height: 200px;
@@ -160,6 +168,23 @@
   padding: 1rem;
   margin: 1rem;
   background: blue;
+}
+
+.alert-primary, .alert-danger {
+  width: calc(100% - 1rem - 30px);
+  padding: 15px;
+  margin: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  letter-spacing: 5px;
+  font-family: "lato", sans-serif;
+  color: #fff;
+}
+.alert-primary {
+  background: #f0b32f;
+}
+.alert-danger {
+  background: #ec5d64;
 }
 
 /*# sourceMappingURL=styles.css.map */

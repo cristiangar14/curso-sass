@@ -1,7 +1,9 @@
 /*
 * Abstracts
 */
-@import 'abstracts/variables';
+@import 
+    'abstracts/variables',
+    'abstracts/functions';
 
 /*
 * Compoenents 
@@ -9,5 +11,6 @@
 @import 
     'components/titles', 
     'components/cards',
-    'components/buttons';
+    'components/buttons',
+    'components/alerts';
 
