@@ -1,3 +1,6 @@
+$colors: 'primary' $primary, 'success' $success, 'danger' $danger, 'dark' $dark;
+
+
 //soli buttons
 // Placeholder uso del %
 %btn {
@@ -23,10 +26,10 @@
     }
 
     &success {
-        background: $secundary;
+        background: $success;
     }
     &danger {
-        background: rgb(231,47,56);
+        background: $danger;
     }
 }
 
@@ -48,7 +51,7 @@
         &:hover {
             //manejar el color
             //mix combinar colores
-            background: mix($color, #292727);
+            //background: mix($color, #292727);
             //escala de color
             //background: scale-color($color:$color, $saturation: 50% ,$lightness: 10%);
             //lighten (aclarar)
@@ -56,7 +59,7 @@
             //Darken (oscureser)
             // background: darken($color:$color, $amount: 20);
             //darle opacidad
-            // background: rgba($color, 0.5);
+            background: rgba($color, 0.5);
             color: #fff;
         }
     }
@@ -83,29 +86,35 @@
     //     }
     // }
     // &-success{
-    //     border: 1px solid $secundary;
-    //     color: $secundary;
+    //     border: 1px solid $success;
+    //     color: $success;
     //     &:hover{
-    //         background: $secundary;
+    //         background: $success;
     //         color: #fff;
     //     }
     // }
     // &-danger{
-    //     border: 1px solid rgb(231,47,56);
-    //     color: rgb(231,47,56);
+    //     border: 1px solid $danger;
+    //     color: $danger;
     //     &:hover{
-    //         background: rgb(231,47,56);
+    //         background: $danger;
     //         color: #fff;
     //     }
     // }
-    @include button('primary', $primary);
-    @include button('success', $secundary);
-    @include button('danger',  rgb(231,47,56));
+
+
+    //Agregar los colores desde la lista de colores
+    @each $name, $color in $colors {
+        @include button($name, $color);
+    }
+    // @include button('success', nth($colors, 2));
+    // @include button('danger',  nth($colors, 3));
+    // @include button('dark',  nth($colors, 4));
 }
 
 // @include button('primary', $primary);
-// @include button('success', $secundary);
-// @include button('danger',  rgb(231,47,56));
+// @include button('success', $success);
+// @include button('danger',  $danger);
 
 //sizes
 

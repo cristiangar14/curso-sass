@@ -12,7 +12,7 @@
 
 .cdc-title-secundary {
   font-size: 1.75rem;
-  color: #40ba35;
+  color: #35bab5;
 }
 
 .cdc-title-dark {
@@ -28,7 +28,7 @@
   border-radius: 5px;
   border-width: 1px;
   border-style: solid;
-  border-color: #40ba35;
+  border-color: #35bab5;
 }
 .cdc-card img {
   width: 100%;
@@ -87,7 +87,7 @@
   color: #dc9c10;
 }
 .cdc-btn-outline-primary:hover {
-  background: #83621c;
+  background: rgba(220, 156, 16, 0.5);
   color: #fff;
 }
 .cdc-btn-outline-success {
@@ -95,7 +95,7 @@
   color: #40ba35;
 }
 .cdc-btn-outline-success:hover {
-  background: #35712e;
+  background: rgba(64, 186, 53, 0.5);
   color: #fff;
 }
 .cdc-btn-outline-danger {
@@ -103,7 +103,15 @@
   color: rgb(231, 47, 56);
 }
 .cdc-btn-outline-danger:hover {
-  background: #882b30;
+  background: rgba(231, 47, 56, 0.5);
+  color: #fff;
+}
+.cdc-btn-outline-dark {
+  border: 1px solid #000;
+  color: #000;
+}
+.cdc-btn-outline-dark:hover {
+  background: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
 
