@@ -97,3 +97,23 @@
 // @include button('success', $secundary);
 // @include button('danger',  rgb(231,47,56));
 
+//sizes
+
+@mixin size ($h, $w, $p, $m, $bg){
+   
+    height: $h;
+    width: $w;
+    padding: $p;
+    margin: $m;
+    background: $bg;
+    
+}
+
+.im{
+    &-container {
+        @include size(200px, 200px , 1rem, 1rem, red );
+        &-big {
+            @include size(700px, 700px , 1rem, 1rem, blue );
+        }
+    }
+}
