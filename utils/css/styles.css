@@ -87,7 +87,7 @@
   color: #dc9c10;
 }
 .cdc-btn-outline-primary:hover {
-  background: #dc9c10;
+  background: #83621c;
   color: #fff;
 }
 .cdc-btn-outline-success {
@@ -95,7 +95,7 @@
   color: #40ba35;
 }
 .cdc-btn-outline-success:hover {
-  background: #40ba35;
+  background: #35712e;
   color: #fff;
 }
 .cdc-btn-outline-danger {
@@ -103,7 +103,7 @@
   color: rgb(231, 47, 56);
 }
 .cdc-btn-outline-danger:hover {
-  background: rgb(231, 47, 56);
+  background: #882b30;
   color: #fff;
 }
 

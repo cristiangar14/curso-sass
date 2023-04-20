@@ -46,7 +46,17 @@
         border: 1px solid $color;
         color: $color;
         &:hover {
-            background: $color;
+            //manejar el color
+            //mix combinar colores
+            background: mix($color, #292727);
+            //escala de color
+            //background: scale-color($color:$color, $saturation: 50% ,$lightness: 10%);
+            //lighten (aclarar)
+            // background: lighten($color:$color, $amount: 20);
+            //Darken (oscureser)
+            // background: darken($color:$color, $amount: 20);
+            //darle opacidad
+            // background: rgba($color, 0.5);
             color: #fff;
         }
     }
