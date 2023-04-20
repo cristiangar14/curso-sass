@@ -2,16 +2,19 @@
 
 .#{$brand}-title-primary{
     font-size: $font-size;
-    color: $primary;
+    //traer el color desde el map
+    color: map-get($map: $palette, $key: 'primary');
 }
 
 .#{$brand}-title-secundary{
     font-size: $font-size;
-    color: $secundary;
+    //traer el color desde el map
+    color: map-get($map: $palette, $key: 'secundary');
 }
 
 .#{$brand}-title-dark{
-    color: $dark_opacity;
+    //traer el color desde el map de palette
+    color: map-get($map: $palette, $key: 'dark_opacity');
 
     //Nesting
     font: {

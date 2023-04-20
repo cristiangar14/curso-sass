@@ -90,6 +90,14 @@
   background: rgba(220, 156, 16, 0.5);
   color: #fff;
 }
+.cdc-btn-outline-secundary {
+  border: 1px solid #35bab5;
+  color: #35bab5;
+}
+.cdc-btn-outline-secundary:hover {
+  background: rgba(53, 186, 181, 0.5);
+  color: #fff;
+}
 .cdc-btn-outline-success {
   border: 1px solid #40ba35;
   color: #40ba35;
@@ -112,6 +120,30 @@
 }
 .cdc-btn-outline-dark:hover {
   background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.cdc-btn-outline-dark_opacity {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4);
+}
+.cdc-btn-outline-dark_opacity:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.cdc-btn-outline-blue {
+  border: 1px solid rgb(14, 14, 229);
+  color: rgb(14, 14, 229);
+}
+.cdc-btn-outline-blue:hover {
+  background: rgba(14, 14, 229, 0.5);
+  color: #fff;
+}
+.cdc-btn-outline-orange {
+  border: 1px solid rgb(255, 85, 0);
+  color: rgb(255, 85, 0);
+}
+.cdc-btn-outline-orange:hover {
+  background: rgba(255, 85, 0, 0.5);
   color: #fff;
 }
 

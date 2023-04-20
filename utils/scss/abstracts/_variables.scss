@@ -1,9 +1,20 @@
 $primary: #dc9c10;
 $secundary: #35bab5;
 $success: #40ba35;
-$danger: rgb(231,47,56);;
+$danger: rgb(231,47,56);
 $dark: #000;
 $dark_opacity: rgba($dark, 0.4);
-
 $font-size: 1.75rem;
 $brand: 'cdc';
+
+//maps
+$palette: (
+    'primary':  #dc9c10,
+    'secundary': #35bab5,
+    'success': #40ba35,
+    'danger': rgb(231,47,56),
+    'dark': #000,
+    'dark_opacity': rgba($dark, 0.4),
+    'blue': rgb(14, 14, 229),
+    'orange': rgb(255, 85, 0)
+)

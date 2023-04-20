@@ -1,5 +1,6 @@
-$colors: 'primary' $primary, 'success' $success, 'danger' $danger, 'dark' $dark;
 
+//listas
+// $colors: 'primary' $primary, 'success' $success, 'danger' $danger, 'dark' $dark;
 
 //soli buttons
 // Placeholder uso del %
@@ -104,7 +105,11 @@ $colors: 'primary' $primary, 'success' $success, 'danger' $danger, 'dark' $dark;
 
 
     //Agregar los colores desde la lista de colores
-    @each $name, $color in $colors {
+    // @each $name, $color in $colors {
+    //     @include button($name, $color);
+    // }
+    //Agregar los colores desde el map de colores (palette)
+    @each $name, $color in $palette {
         @include button($name, $color);
     }
     // @include button('success', nth($colors, 2));

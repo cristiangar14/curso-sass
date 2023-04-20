@@ -8,7 +8,8 @@
         radius: 5px;
         width: 1px;
         style: solid;
-        color: $secundary;
+        //traer el color desde el map
+        color: map-get($map: $palette, $key: 'secundary');
     };
 
     img {
@@ -19,7 +20,8 @@
     &__body{
         height: 50px;
         text-align: center;
-        background: $primary;
+        //traer el color desde el map
+        background: map-get($map: $palette, $key: 'primary');
         line-height: 50px;
     }
     h1 {
