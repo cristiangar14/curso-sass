@@ -5,3 +5,23 @@
 @function reduceColor($name, $amount){
     @return lighten(color($name), $amount);
 }
+
+@function changeColor($name, $type:darken, $amount: 1, $colorMix: #fff ){
+    $color: color($name);
+    @if $type == darken {
+        $color : darken($color, $amount);
+    } @else if $type == lighten {
+        $color : lighten($color, $amount);
+    } @else if $type == mixcolor {
+        $findcolor: color($colorMix);
+        @if ($findcolor){
+            $colorMix: $findcolor;
+        }
+        $color : mix($color, $colorMix);
+    } @else {
+        // add opacity
+        $color: rgba($color, $amount)
+    }
+
+    @return $color
+}

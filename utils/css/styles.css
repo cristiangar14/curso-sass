@@ -181,10 +181,10 @@
   color: #fff;
 }
 .alert-primary {
-  background: #f0b32f;
+  background: rgba(220, 156, 16, 0.75);
 }
 .alert-danger {
-  background: #ec5d64;
+  background: #947537;
 }
 
 /*# sourceMappingURL=styles.css.map */
