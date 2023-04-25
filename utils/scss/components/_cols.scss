@@ -1,0 +1,21 @@
+
+@mixin cols($bks, $cols, $prefix){
+    @each $name, $bk in $breakpoints {
+        @media(min-width: $bk){
+            @for $i from 1 to $cols + 1 {
+                .#{$prefix}-#{$name}-#{$i}{
+                    width: calc(($i * 100) / $cols) * 1%;
+                }
+            }
+
+        }
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@include cols($breakpoints, $ncols, 'col');

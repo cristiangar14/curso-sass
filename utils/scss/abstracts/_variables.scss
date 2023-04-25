@@ -31,3 +31,13 @@ $palette: (
 
 $titles: 'xs' 16px 400, 'md' 20px 500, 'lg' 24px 600, 'xl' 34px 900;
 
+$ncols: 12;
+
+$breakpoints: (
+    'xs': 0,
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px,
+    'xxl': 1400px
+);
