@@ -5,6 +5,7 @@
 * Compoenents 
 */
 @import url(../obstracts/_variables.scss);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
 .cdc-title-primary {
   font-size: 1.75rem;
   color: #dc9c10;
@@ -519,6 +520,119 @@ tbody tr:nth-child(20) {
   background: linear-gradient(to bottom, white, white);
 }
 
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+ul li {
+  width: 100%;
+}
+ul li a {
+  display: block;
+}
+ul li a i {
+  margin-right: 16px;
+}
+
+main {
+  width: calc(100% - 300px);
+  margin-left: 300px;
+}
+
+nav.menu {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1E274E;
+}
+nav.menu .menu-links {
+  width: 90%;
+  margin-left: 10%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+ul > li a {
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 0;
+  font-weight: 500;
+  transition: 0.25s all ease-in-out;
+}
+ul > li a:hover {
+  box-shadow: 0px 0px 8px -4px rgb(255, 255, 255);
+  border-radius: 10px 0 0 10px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+ul > li ul > li a {
+  background-color: #131A36;
+  font-size: 15px;
+  padding: 15px 0 15px 10px;
+}
+ul > li ul > li a:hover {
+  box-shadow: 0px 0px 8px 0px #131A36;
+  border-radius: 0 50px 50px 0;
+  color: #131A36;
+  background: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-left: 10px solid #131A36;
+}
+
+ul > li ul > li ul > li a {
+  font-size: 12px;
+}
+
+ul > li {
+  margin-left: 0px;
+  position: relative;
+}
+ul > li > ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+ul > li:hover > ul {
+  display: block;
+}
+ul > li ul > li {
+  margin-left: 50px;
+  position: relative;
+}
+ul > li ul > li > ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+ul > li ul > li:hover > ul {
+  display: block;
+}
+ul > li ul > li ul > li {
+  margin-left: 100px;
+  position: relative;
+}
+ul > li ul > li ul > li > ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+ul > li ul > li ul > li:hover > ul {
+  display: block;
+}
 .alert-primary, .alert-danger {
   width: calc(100% - 1rem - 30px);
   padding: 15px;
