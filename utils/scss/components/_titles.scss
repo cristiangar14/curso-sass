@@ -24,3 +24,17 @@
     }
 
 }
+
+// esta es una forma de definir los tamaños
+// @each $size in $titles {
+//     .title-#{$size}{
+//         font-size: $size * 1px;
+//     }
+// }
+
+@each $name, $size, $fontw in $titles {
+    .title-#{$name}{
+        font-size: $size;
+        font-weight: $fontw;
+    }
+}
