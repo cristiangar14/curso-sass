@@ -6,6 +6,12 @@
     'abstracts/functions';
 
 /*
+*Globals
+*/
+
+@import 'global/base';
+
+/*
 * Compoenents 
 */
 @import 
@@ -14,6 +20,7 @@
     'components/buttons',
     'components/cols',
     'components/table',
+    'components/userCard',
     'components/menu',
     'components/toast',
     'components/alerts';
