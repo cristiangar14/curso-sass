@@ -6,6 +6,7 @@
 */
 @import url(../obstracts/_variables.scss);
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
 .cdc-title-primary {
   font-size: 1.75rem;
   color: #dc9c10;
@@ -633,6 +634,131 @@ ul > li ul > li ul > li > ul {
 ul > li ul > li ul > li:hover > ul {
   display: block;
 }
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.toast {
+  width: 300px;
+  padding: 16px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  box-shadow: 1px 1px 6px 2px rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.toast__close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  color: #000;
+}
+.toast__close:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+.toast__image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("data:image/png;base64,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");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  box-shadow: 2px 0px 5px -2px rgba(0, 0, 0, 0.5);
+}
+.toast__info {
+  margin-left: 104px;
+}
+.toast__title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.toast__description {
+  font-size: 12px;
+  margin: 0 0 12px 0;
+}
+.toast__btn {
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
+  float: right;
+  color: #fff;
+  background-color: #000;
+  font-weight: 600;
+  outline: none;
+}
+.toast__btn:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+.toast-simple .toast__info {
+  margin-left: 4px;
+  width: 100%;
+}
+.toast-left-botom, .toast-botom-left {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+}
+.toast-left top-, .toast--left top {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+}
+.toast-right-bottom, .toast-bottom-right {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+}
+.toast-right-top, .toast-top-right {
+  position: fixed;
+  right: 16px;
+  top: 16px;
+}
+
+.toast-primary {
+  background-color: #dc9c10;
+  color: #fff;
+}
+.toast-primary .toast__close {
+  color: #fff;
+}
+.toast-primary .toast__btn {
+  color: #dc9c10;
+  background-color: #fff;
+}
+
+.toast-success {
+  background-color: #40ba35;
+  color: #fff;
+}
+.toast-success .toast__close {
+  color: #fff;
+}
+.toast-success .toast__btn {
+  color: #40ba35;
+  background-color: #fff;
+}
+
+.toast-danger {
+  background-color: rgb(231, 47, 56);
+  color: #fff;
+}
+.toast-danger .toast__close {
+  color: #fff;
+}
+.toast-danger .toast__btn {
+  color: rgb(231, 47, 56);
+  background-color: #fff;
+}
+
 .alert-primary, .alert-danger {
   width: calc(100% - 1rem - 30px);
   padding: 15px;
