@@ -25,3 +25,20 @@
     'components/toast',
     'components/alerts';
 
+
+
+    /*
+    *@Import
+    *En cuanto a import agrega todo lo que venaga en los archivos pero se debe tener en cuenta que la estructura este bien definida 
+    *Para que los archivos no se sobreescriban 
+    *Por esto primero se agregan las variables y funciones 
+    *Permite trabajar mas facil con variables
+    */
+
+    /*
+    *@use 'components/alerts' as alias
+    *El use se comporta como modulos y para llamarlo se le pone un alias
+    *Para utilizar es con el alias.variable
+    *De este modo en elos archivos nos los metodos o normbres pueden ser los  mismo y con el alias no se sobrescriben
+    *Se usa cuando se quiere aislar los componentes
+    */
